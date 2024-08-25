@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>new project</title>
-    <style>
-      * { border: 1px solid red !important; }
-      body { border: 5px dashed blue; }
-      </style>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -60,15 +56,17 @@
          <!-- product section -->
          <section class="bg-body py-10">
             <div class="w-11/12 mx-auto">
-                <h2 class="text-4xl font-semibold">Best Selling Products</h2>
+                <h2 class="text-4xl font-semibold text-center">Best Selling Products</h2>
                 <div class="flex flex-col lg:flex-row justify-between items-center gap-5 my-10">
                     <img src="product01.jpg" alt="" >
+                    <img src="product01.jpg" alt="">
                     <img src="product01.jpg" alt="">
                 </div>
             </section>
 
             <!-- new section -->
             <section class="bg-gray-200 p-5">
+              <h1 class="flex text-center font-bold justify-center text-2xl">Send Mail</h1>
               <form action="" class="lg:grid lg:grid-cols-2 px-14 ">
                 <input class="lg:h-12 w-full lg:w-1/2 rounded-full mt-5 lg:ml-80 lg:p-2" type="text" placeholder="FirstName*" name="" id="">
                 <input class="lg:h-12 w-full lg:w-1/2 rounded-full mt-5 lg:p-2" type="text" placeholder="LastName*" name="" id=""> 
@@ -82,6 +80,23 @@
               </button>
             </div>
             </section>
+
+            <section class="flex lg:justify-evenly flex-col lg:flex-row mt-10 lg:w-10/12 gap-3 lg:ml-24">
+              <div class="flex bg-white items-center flex-col lg:flex-row shadow-lg px-2 py-2 md:px-10 lg:py-4 rounded-lg top-28 lg:left-28 border border-slate-300">
+                <div>
+                  <img  src="product02.jpg" alt="">
+                </div>
+                  <div class="ml-2">
+                    <h1 class="font-extrabold text-xl">Website</h1>
+                    <p class="font-medium text-base mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias earum, tenetur quam repellendus architecto sequi consequatur deserunt illum? Repellat, consequatur quae. </p>
+                    <h3 class="font-extrabold text-xl mt-5">View Details 
+                      <i class="fa-solid fa-arrow-right text-base -rotate-45 text-black ml-2 bg-primary rounded-full w-6 h-6 p-0"></i></h3>
+                  </div>
+              </div>
+              <div class="flex bg-white items-center shadow-lg px-2 py-2 md:px-10 lg:py-4 rounded-lg top-28 lg:left-28 border border-slate-300">
+                <img class="w-[95%] pl-5" src="product03.jpg" alt="">
+              </div>
+             </section>
         </main> 
 </body>
 </html>
