@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new project</title>
+    <style>
+      * { border: 1px solid red !important; }
+      body { border: 5px dashed blue; }
+      </style>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/bbfc4be646.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#E7C1D3',
+            primary: '#ABEF5F',
+            secondary:'#1C1C1C',
+            accent:'#FFFFFF',
+            body:'#ABEF5F',
+            body_neutral:'#EFDA6E',
+            tomato:'#A4DAC3',
+            blue:'#77AAEA',
+          }
+
+          }
+      }
+    }
+  </script>
+  <style>
+    .manrope {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
+</head>
+<body>
+    <main>
+      <!-- banner section -->
+         <section class="flex items-center justify-center mt-10">
+          <img src="bannerbg.png" alt="">
+         </section>
+         <section class="flex mt-5 items-center justify-center">
+             <div>
+              <h1 class="text-5xl font-bold w-11/12 mx-auto text-center">Best Quality Products</h1> <br>
+              <p class="mx-auto text-gray-600 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p> <br>
+              <div class="flex justify-center">
+                <button type="button" class="text-black bg-primary font-medium rounded-full text-sm px-4 py-2 text-center mb-5">Click Here
+                  <i class="fa-solid fa-arrow-right text-base -rotate-45 text-white bg-black rounded-full w-6 h-6"></i>
+                </button>
+              </div>
+             </div>
+         </section>
+         <!-- product section -->
+         <section class="bg-body py-10">
+            <div class="w-11/12 mx-auto">
+                <h2 class="text-4xl font-semibold">Best Selling Products</h2>
+                <div class="flex flex-col lg:flex-row justify-between items-center gap-5 my-10">
+                    <img src="product01.jpg" alt="" >
+                    <img src="product01.jpg" alt="">
+                </div>
+            </section>
+
+            <!-- new section -->
+            <section class="bg-gray-200 p-5">
+              <form action="" class="lg:grid lg:grid-cols-2 px-14 ">
+                <input class="lg:h-12 lg:w-1/2 rounded-full mt-5 ml-80 p-2" type="text" placeholder="FirstName*" name="" id="">
+                <input class="lg:h-12 lg:w-1/2 rounded-full mt-5 p-2" type="text" placeholder="LastName*" name="" id=""> 
+                <input class="lg:h-12 lg:w-1/2 rounded-full mt-5 ml-80 p-2" type="text" placeholder="PhoneNumber*" name="" id="">
+                <input class="lg:h-12 lg:w-1/2 rounded-full mt-5 p-2" type="text" placeholder="EmailNumber*" name="" id=""> 
+                <textarea class= "lg:w-[52%] rounded-lg mt-5 col-span-2 mb-5 ml-80 p-2 text-gray-400" rows="5" cols="20" name="" id="">Write your message here</textarea>
+            </form>
+            <div class="flex justify-center">
+              <button type="button" class="text-black w-[49%] bg-primary mb-5 font-medium rounded-full text-sm px-4 py-2 text-center">Send Mail
+                <i class="fa-solid fa-arrow-right text-base -rotate-45 text-white bg-black rounded-full w-6 h-6"></i>
+              </button>
+            </div>
+            </section>
+        </main> 
+</body>
+</html>
